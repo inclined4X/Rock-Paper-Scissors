@@ -11,5 +11,10 @@ possibleChoices.forEach((possibleChoice) =>
   possibleChoice.addEventListener("click", (e) => {
     userChoice = e.target.id;
     userChoiceDisplay.innerHTML = userChoice;
+    generateComputerChoice();
   })
 );
+
+function generateComputerChoice() {
+  const randomNumber = Math.floor(Math.random() * possibleChoices.length);
+}
